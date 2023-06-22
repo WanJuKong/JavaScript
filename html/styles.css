@@ -1,0 +1,49 @@
+.buttonlists {
+        list-style-type:none;
+        overflow:hidden;
+}
+
+.buttonlists li {
+        float:left;
+}
+
+
+#start {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:#223c6f;
+}
+
+#start li {
+	float:left;
+}
+
+#start li a {
+	font-size:20px;
+	display:block;
+	color:white;
+	text-align:center;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	text-decoration:none;
+}
+
+#start li a:hover {
+	font-size:24px;
+	padding-top:8px;
+	padding-bottom:7px;
+	background-color:#00184b;
+}
+
+
+h2 sub a {
+	text-decoration:none;
+}
+
+
+#top {
+	text-align:center;
+}
