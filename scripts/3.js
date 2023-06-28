@@ -23,4 +23,4 @@ function func_3_2(){
         document.getElementById("3_2_1").innerHTML = person.getFullName();
         document.getElementById("3_2_2").innerHTML = person.phoneNumber;
 }
-~  
+  
