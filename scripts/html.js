@@ -10,9 +10,11 @@
  * 	return : success(0:num), fail(-1:num)
  * 	HowToUse: html.put(id, putData) || html('put', id, putData) ...etc
  *
- * add, insert : add data to innerHTML of given elementID at given index(default set to -1)
+ * add, insert, append : add data to innerHTML of given elementID at given index(default set to -1)
  * 	return : success(0:num), fail(-1:num)
  * 	HowToUse: html.add(id, addData, index) || html('add', id, addData, index) ...etc
+ *
+ * Copyright 2023.juwan all rights reserved.
  */
 
 function html(type, id, data = undefined, index = -1){
@@ -20,7 +22,7 @@ function html(type, id, data = undefined, index = -1){
 		return html.get(id);
 	else if(type == 'put' || type == 'set')
 		return html.put(id, data);
-	else if(type == 'add' || type == 'insert')
+	else if(type == 'add' || type == 'insert' ||type == 'append')
 		return html.add(id, data, index);
 	else{
 		alert("Err: no such type['" + type + "']");
@@ -68,8 +70,13 @@ const html = {
 			let rtnData = txt.slice(0,index) + addData + txt.slice(index);
 			thos.put(rtnData);
 		}
-	}
+	},
+
 	insert : function(id, addData, index = -1){
+		return this.add(id, addData, index = -1);
+	},
+
+	append :function(id, addData, index = -1){
 		return this.add(id, addData, index = -1);
 	}
 };
