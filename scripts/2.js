@@ -1,3 +1,5 @@
+/*operators practice*/
+
 function func_2_1(){
 	let x = "5"+2+3;
 	let y = 5+"2"+"3";

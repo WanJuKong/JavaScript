@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset=utf-8>
 		<title> JavaScript practice </title>
 		<link rel="icon" type="x-image/icon" href="../elements/icon.ico">
 		<link rel="stylesheet" href="./styles.css">
+		<script src="../scripts/html.js"></script>
+		<script src="../scripts/1.js"></script>
+		<script src="../scripts/2.js"></script>
+		<script src="../scripts/3.js"></script>
+		<script src="../scripts/4.js"></script>
+		<script src="../scripts/5.js"></script>
 	</head>
 	<body>
 		<h1 id="top"> JavaScript practice </h1>
@@ -26,7 +33,6 @@
 			<li title="alert"> <button onclick="func_1_3()"> 1_3 </button> </li>
 			<li title="print"> <button onclick="func_1_4()"> 1_4 </button> </li>
 		</ul>
-		<script src="../scripts/1.js"></script>
 		<hr>
 		<h2 id="practice_2"> 2 <sub> <a href="#top"> [To top] </a> </sub> </h2>
 		<p> <strong> list 2_1 </strong> </p>
@@ -41,7 +47,6 @@
 			<li title="testing results"> <button onclick="func_2_1()"> 2_1 </button> </li>
 			<li title="banana"> <button onclick="func_2_2()"> 2_2 </button> </li>
 		</ul>
-		<script src="../scripts/2.js"></script>
 		<hr>
 		<h2 id="practice_3"> 3 <sub> <a href="#top"> [To top] </a> </sub> </h2>
 		<p> <strong> list 3_1 </strong> </p>
@@ -61,7 +66,6 @@
 			<li title="operators"> <button onclick="func_3_1()"> 3_1 </button> </li>
 			<li title="name"> <button onclick="func_3_2()"> 3_2 </button> </li>
 		</ul>
-		<script src="../scripts/3.js"></script>
 		<hr>
 		<h2 id="practice_4"> 4 <sub> <a href="#top"> [To Top] </a> </sub> </h2>
 		<p id="4_slice">apple, banana, kiwi </p>
@@ -74,7 +78,20 @@
 			<li title="to upper case"> <button type=button onclick="updown('4_UD', 'up')">toUpperCase</button></li>
 			<li title="to lower case"> <button type=button onclick="updown('4_UD', 'down')">toLowerCase</button></li>
 		</ul>
-		<script src="../scripts/4.js"></script>
 		<hr>
+		<h2 id="practice_5"> 5 <sub> <a href="#top"> [To Top] </a> </sub> </h2>
+		<p id=5_>locate the word "word" in this sentences </p>
+		<p id=5_serch> rst </p>
+
+		<ul class="buttonlists">
+			<li> <button type=button onclick="locate('5_', '5_serch', 'word')"> serch </button></li>
+			<br>
+			<ul class="notbuttonlists">
+				<li> <strong> set locate type </strong>: <span id="5_type_set">first(default)</span> </li>
+				<li><button type=button onclick="setLocateType('first', '5_type_set')"> 'first'</button></li>
+				<li><button type=button onclick="setLocateType('last', '5_type_set')"> 'last'</button></li>
+				<li><button type=button onclick="setLocateType('all', '5_type_set')"> 'all'</button></li>
+			</ul>
+		</ul>
 	</body>
 </html>

@@ -1,15 +1,9 @@
-function get(id){
-	return document.getElementById(id).innerHTML;
-}
-function put(id, putVal){
-	document.getElementById(id).innerHTML = putVal;
-	return 0;
-}
+/*string practice*/
 
 function slice(id){
-	let htmlText = get(id);
+	let htmlText = html.get(id);
 	let rtnStr = htmlText.slice(7,13);
-	put(id, rtnStr);
+	html.put(id, rtnStr);
 }
 
 function basicString(){
@@ -19,20 +13,20 @@ function basicString(){
 }
 
 function replace(id, fStr, altStr){
-        let htmlText = get(id);
+        let htmlText = html.get(id);
         let rtnStr = htmlText.replace(fStr, altStr);
-        put(id, rtnStr);
+        html.put(id, rtnStr);
 }
 
 function updown(id, type){
 	let rtnStr;
 	if(type == 'up')
-		rtnStr=get(id).toUpperCase();
+		rtnStr=html.get(id).toUpperCase();
 	else if(type == 'down')
-		rtnStr=get(id).toLowerCase();
+		rtnStr=html.get(id).toLowerCase();
 	else{
 		alert("Err");
 		return 0;
 	}
-	put(id, rtnStr);
+	html.put(id, rtnStr);
 }

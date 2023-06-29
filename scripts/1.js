@@ -1,3 +1,5 @@
+/*output methods practice*/
+
 function func_1_1(){
 	document.getElementById("p").innerHTML = 4+2;
 }

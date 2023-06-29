@@ -1,3 +1,5 @@
+/*objects practice*/
+
 function func_3_1() {
 	let x = 100;
 	let v1 = x & 5;
