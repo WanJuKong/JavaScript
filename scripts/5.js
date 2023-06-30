@@ -30,7 +30,27 @@ function locateAll(txt, word, start = 0, sum = []){
 	if(rst==-1)
 		return sum;
 	else{
-		sum.push(rst);
+		sum.put(rst);
 		return locateAll(txt, word, rst+1, sum);
 	}
 }
+
+function include(txtId, rstId, word){
+	let txt = html.get(txtId);
+	let rstStr = txt.includes(word);
+	html.put(rstId, rstStr);
+}
+
+function startEndW(type, txtId, rstId, word){
+	let txt = html.get(txtId);
+	let rstStr;
+	if(type == 'start')
+		rststr = txt.startsWith(word);
+	else if(type == 'end')
+		rstStr = txt.endsWith(word);
+	else{
+		alert("Err: no such type ['" + type + "']'");
+		return -1;
+	}
+	html.put(rstId, rstStr);
+}i

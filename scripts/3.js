@@ -12,16 +12,16 @@ function func_3_1() {
 	document.getElementById("3_1_4").innerHTML = v4;
 }
 
+const person = {
+	firstName : 'juwan',
+	lastName : 'kim',
+	phoneNumber : "010-3048-3057",
+	getFullName : function(){
+		return this.firstName + " " + this.lastName;
+	}
+};
 
 function func_3_2(){
-	const person = {
-                firstName : "juwan",
-                lastName : "kim",
-                phoneNumber : "010-3048-3057",
-                getFullName : function(){
-                        return this.firstName + " " + this.lastName;
-                }
-	};
         document.getElementById("3_2_1").innerHTML = person.getFullName();
         document.getElementById("3_2_2").innerHTML = person.phoneNumber;
 }
