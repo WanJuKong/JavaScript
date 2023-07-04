@@ -1,4 +1,5 @@
 /*string serch*/
+
 var type='first';
 
 function setLocateType(setType, id){
@@ -30,7 +31,7 @@ function locateAll(txt, word, start = 0, sum = []){
 	if(rst==-1)
 		return sum;
 	else{
-		sum.put(rst);
+		sum.push(rst);
 		return locateAll(txt, word, rst+1, sum);
 	}
 }
@@ -44,13 +45,14 @@ function include(txtId, rstId, word){
 function startEndW(type, txtId, rstId, word){
 	let txt = html.get(txtId);
 	let rstStr;
-	if(type == 'start')
-		rststr = txt.startsWith(word);
-	else if(type == 'end')
+	if(type === 'start')
+		rstStr = txt.startsWith(word);
+	else if(type === 'end')
 		rstStr = txt.endsWith(word);
 	else{
-		alert("Err: no such type ['" + type + "']'");
+		alert("Err: no such type '" + type + "'");
 		return -1;
 	}
-	html.put(rstId, rstStr);
-}i
+	html.put(resId, rstStr);
+}
+
