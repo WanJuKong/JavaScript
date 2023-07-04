@@ -56,3 +56,11 @@ function startEndW(type, txtId, rstId, word){
 	html.put(resId, rstStr);
 }
 
+
+function templateLiterals(id){
+	let x = 'hello';
+	let y = 'bye';
+	let a = 12;
+	let b = 6;
+	html.put(id, `${x}\n 12 *5 = ${a*b}\n ${y}`);
+}
